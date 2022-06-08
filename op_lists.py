@@ -1,4 +1,6 @@
 # Operaciones entre listas
+import random
+
 def op(a,b):
     s = []
     r = []
@@ -11,8 +13,10 @@ def op(a,b):
         d.append(a[i]/b[i])
     print("La suma es: ",s,"\nLa resta es: ",r,"\nLa multiplicacion es: ",m,"\nLa division es: ",d)
     
-
-l1 = [2,4,6,8]
-l2 = [8,6,4,2]
+l1 = []
+l2 = []
+for i in range(4):
+    l1.append(random.randint(1,10))
+    l2.append(random.randint(1,10))
 
 op(l1,l2)

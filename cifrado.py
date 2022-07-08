@@ -15,6 +15,6 @@ print('El texto cifrado es: ',c)
 for i in c:
     n = ord(i)-s
     if n < 97:
-        n += 1
+        n += 26
     d += chr(n)
 print('El texto descifrado es: ',d)

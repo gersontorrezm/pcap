@@ -45,54 +45,13 @@ def VictoryFor(board, sign):
     boardv4 = [board[0][1], board[1][1], board[2][1]]
     boardv5 = [board[0][2], board[1][2], board[2][2]]
                 
-    if board[0] == ganador[0]:
+    if board[0] == ganador[0] or board[1] == ganador[1] or board[2] == ganador[2] or board1 == ganador1 or board2 == ganador2 or ganadorv3 == boardv3 or ganadorv3 == boardv4 or ganadorv3 == boardv5:
         if sign == 'o':
             print('*** G A N A S T E ***')
         else:
             print('*** T E  G A N É ***')
         sw = 0
-    if board[1] == ganador[1]:
-        if sign == 'o':
-            print('*** G A N A S T E ***')
-        else:
-            print('*** T E  G A N É ***')
-        sw = 0
-    if board[2] == ganador[2]:
-        if sign == 'o':
-            print('*** G A N A S T E ***')
-        else:
-            print('*** T E  G A N É ***')
-        sw = 0
-    if board1 == ganador1:
-        if sign == 'o':
-            print('*** G A N A S T E ***')
-        else:
-            print('*** T E  G A N É ***')
-        sw = 0
-    if board2 == ganador2:
-        if sign == 'o':
-            print('*** G A N A S T E ***')
-        else:
-            print('*** T E  G A N É ***')  
-        sw = 0
-    if ganadorv3 == boardv3:
-        if sign == 'o':
-            print('*** G A N A S T E ***')
-        else:
-            print('*** T E  G A N É ***')  
-        sw = 0
-    if ganadorv3 == boardv4:
-        if sign == 'o':
-            print('*** G A N A S T E ***')
-        else:
-            print('*** T E  G A N É ***')  
-        sw = 0
-    if ganadorv3 == boardv5:
-        if sign == 'o':
-            print('*** G A N A S T E ***')
-        else:
-            print('*** T E  G A N É ***')  
-        sw = 0
+    
     
 def DrawMove(board):
     # La función dibuja el movimiento de la máquina y actualiza el tablero.

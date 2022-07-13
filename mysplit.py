@@ -9,4 +9,4 @@ def mysplit(string):
             word = ''
     print(lista)
     
-print(mysplit('Hola como estas'))
+print(mysplit('Hola esta es una prueba'))
